@@ -1,4 +1,3 @@
-
 #include<iostream>
 using namespace std;
 
@@ -186,3 +185,22 @@ public:
         cout << endl;
     }
 };
+
+int main() {
+    List mylist;
+    mylist.insert_front();
+    mylist.insert_front();
+    mylist.insert_back();
+    mylist.insert_afterMiddle();
+    mylist.insert_after();
+    mylist.displayList();
+    mylist.erase_front();
+    mylist.erase_back();
+    mylist.erase_middle();
+    mylist.erase_after();
+    mylist.displayList();
+    cout << "Index of : " << mylist.searchIndexByValue() << endl;
+    cout << "Value at index : " << mylist.searchValueByValue() << endl;
+    return 0;
+}
+
