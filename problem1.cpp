@@ -186,22 +186,3 @@ public:
         cout << endl;
     }
 };
-
-int main() {
-    List mylist;
-    mylist.insert_front(10);
-    mylist.insert_front(20);
-    mylist.insert_back(30);
-    mylist.insert_afterMiddle(40);
-    mylist.insert_after(1, 50);
-    mylist.displayList();
-    mylist.erase_front();
-    mylist.erase_back();
-    mylist.erase_middle();
-    mylist.erase_after(1);
-    mylist.displayList();
-    cout << "Index of 40: " << mylist.searchIndexByValue(40) << endl;
-    cout << "Value at index 2: " << mylist.searchValueByValue(2) << endl;
-    return 0;
-}
-
